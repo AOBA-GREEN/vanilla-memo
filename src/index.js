@@ -18,7 +18,7 @@ console.log(sum(84, 334));
 //オブジェクトはプロパティ名を指定する
 const profile = {
   name2: "青葉",
-  age2: 26
+  age2: 26,
 };
 const { name2, age2 } = profile;
 const newMessage = `名前は${name2}です。年齢は${age2}です。`;
@@ -76,3 +76,11 @@ const newNumArr = numArr.filter((num) => {
   return num % 2 === 1;
 });
 console.log(newNumArr);
+
+//三項演算子
+//条件 ? trueの時の処理 : falseの時の処理
+
+const num = 3304;
+formattedNum =
+  typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+console.log(formattedNum);
